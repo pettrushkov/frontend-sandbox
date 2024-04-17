@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.wrapper {
+	min-height: 100vh;
+	background-color: #292929;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	min-width: 300px;
+	text-align: center;
+}
+
+.menu__item {
+	position: relative;
+	overflow: hidden;
+}
+
+.menu__link {
+	padding: 20px 30px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	overflow: hidden;
+}
+
+.menu__item .hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.menu__item .hover__text {
+	color: #f00;
+	padding: 20px 30px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
