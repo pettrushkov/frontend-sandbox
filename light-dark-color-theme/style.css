@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	padding: 20px;
+	background-color: #fff;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	transition:
+		color 0.3s,
+		background-color 0.3s;
+}
+
+.page__theme {
+	border: none;
+	padding: 10px;
+}
+
+.page__reset {
+	display: none;
+}
+.page__reset.active {
+	display: inline-block;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	body {
+		color: #fff;
+		background-color: #333;
+	}
+} */
+
+html.dark body {
+	color: #fff;
+	background-color: #333;
+}
+
+html.light body {
+	color: #333;
+	background-color: #fff;
+}
+
+html.dark .page__theme {
+	background: url("img/moon.svg") 0 0 / 100% no-repeat;
+}
+
+html.light .page__theme {
+	background: url("img/sun.svg") 0 0 / 100% no-repeat;
+}
